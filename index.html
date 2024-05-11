@@ -4,17 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Gog Launcher Clone</title>
   </head>
   <body>
     <div class="sidebar">
-      <span>sidebar content here</span>
+      <button class="expandable-header-button">
+        <span>gog galaxy </span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="expandable-content">
+        <span>Im the content of gog galaxy section</span>
+      </div>
+      <button class="expandable-header-button">
+        <span>gog store</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="expandable-content">
+        <span>Im the content of gog galaxy section</span>
+      </div>
+      <button class="expandable-header-button">
+        <span>games</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="expandable-content">
+        <span>Im the content of gog galaxy section</span>
+      </div>
+      <button class="expandable-header-button">
+        <span>friends</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="expandable-content">
+        <span>Im the content of gog galaxy section</span>
+      </div>
     </div>
     <div class="column">
-      <div class="header">
-        <span>header</span>
-      </div>
+      <div class="header"></div>
       <div class="content">
         <span>content</span>
       </div>
@@ -22,5 +52,6 @@
         <span>footer</span>
       </div>
     </div>
+    <script src="scripts/sidebar.js"></script>
   </body>
 </html>

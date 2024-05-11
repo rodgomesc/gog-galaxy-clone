@@ -1,20 +1,23 @@
+:root {
+  --sidebar-expandable-text-color: #716d7a;
+}
 
-* { 
- margin: 0;
- padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fa {
+  color: var(--sidebar-expandable-text-color);
 }
 
 html {
- display: flex;
- width: 100%;
- height: 100%;
-
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 body {
- display: flex;
- flex:1;
+  display: flex;
+  flex: 1;
 }
-
-
-
