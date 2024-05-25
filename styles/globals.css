@@ -1,5 +1,6 @@
 :root {
   --sidebar-expandable-text-color: #716d7a;
+  --sidebar-expandable-text-hovered: #f2f2f3;
 }
 
 * {
