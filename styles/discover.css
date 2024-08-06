@@ -21,7 +21,7 @@
     display: flex;
     flex: 1;
     padding: 40px 45px;
-    background: radial-gradient(0, rgb(53,44,51) 40%, rgba(26,25,25, 1) 100%) 
+    background: radial-gradient(0, rgb(53,44,51) 40%, rgba(26,25,25, 1) 100%);
 }
 
 .footer {
@@ -65,15 +65,21 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.card span {
+    color: white;
 }
 
 .section2 {
     column-gap: 29px;
 }
 
-.card span {
-    color: white;
-    font-size: 18px;
+span.game-name {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
     font-weight: 550;
 }
 
@@ -82,4 +88,44 @@
     background-color: #717171;
 }
 
+.banner-buttons {
+    display: flex;
+    max-height: 60px;
+}
 
+.add-wishlist {
+    cursor: pointer;
+    background-color: black;
+    border-radius: 60px;
+    border: transparent;
+}
+
+.add-to-cart {
+    display: flex;
+    flex:1;
+    max-width: 120px; 
+
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--violet-button-background);
+}
+
+span.game-score {
+    font-size: 18px;
+}
+
+span.purple-button-span  {
+    font-size: 20px;
+}
+
+
+span.fa-star {
+    color: yellow;
+}
+
+span.fa-stack {
+    display: flex;
+    align-items: center;
+}
