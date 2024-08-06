@@ -21,7 +21,6 @@
   display: flex;
   flex: 1;
   padding: 47px 47px;
-  overflow-y: scroll;
 }
 
 .footer {
