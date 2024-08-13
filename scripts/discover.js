@@ -13,5 +13,4 @@ const changeSlide = (idx, secname) => {
 
     const slider = document.getElementsByClassName (secname)[0]
     slider.scrollTo({top: 0, left: scrollOfset, behavior: "smooth"});
-    
 }
