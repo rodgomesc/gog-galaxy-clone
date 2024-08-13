@@ -1,47 +1,54 @@
-.row {
+.row, .column {
     display: flex;
     flex: 1;
+}
+
+.row {
     flex-direction: row;
 }
-  
+
 .column {
-    display: flex;
-    flex: 1;
     flex-direction: column;
     border: 4px solid brown;
+    overflow: hidden; 
+}
+
+.header, .footer {
+    height: 58px;
+    border: 1px solid;
 }
 
 .header {
-    border: 1px solid blue;
-    height: 58px;
-}
-
-.content {
-    border: 1px solid green;
-    padding: 40px 45px;
-    background: radial-gradient(0, rgb(53,44,51) 40%, rgba(26,25,25, 1) 100%);
+    border-color: blue;
 }
 
 .footer {
-    border: 1px solid yellow;
-    height: 58px;
+    border-color: yellow;
 }
+
+.content {
+    display: flex;
+    border: 1px solid green;
+    padding: 40px 45px;
+    background: radial-gradient(0, rgb(53,44,51) 40%, rgba(26,25,25, 1) 100%);
+    overflow: hidden;
+}
+
 
 .slider {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .slider img {
-    display: flex;
     width: 100%;
     border-radius: 2px;
 }
 
+
 .navigation-button {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
 }
@@ -56,13 +63,12 @@
     display: inline-block;
 }
 
-.slide-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.active, .dot:hover {
+    background-color: #717171;
 }
 
-.new-arrivals {
+
+.slide-section, .new-arrivals {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -72,15 +78,19 @@
     display: flex;
     max-height: 716px;
     column-gap: 29px;
-    overflow: hidden;
-
+    overflow-x: auto; 
+    width: 100%;
+    flex-wrap: nowrap; 
 }
+
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #130e10;
+    min-width: 300px;
+    flex: none; 
 }
 
 .card span {
@@ -96,15 +106,9 @@
 }
 
 span.game-name {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 25px;
     font-weight: 550;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
+    flex-wrap: wrap;
 }
 
 .card-buttons {
@@ -112,24 +116,23 @@ span.game-name {
     gap: 20px;
 }
 
-
-
-.add-wishlist {
+.add-wishlist, .add-to-cart {
     display: flex;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-wishlist {
     background-color: black;
     border-radius: 60px;
     border: transparent;
 }
 
 .add-to-cart {
-    display: flex;
-    flex:1;
+    flex: 1;
     max-width: 120px; 
     border-radius: 2px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
     background-color: var(--violet-button-background);
 }
 
@@ -145,7 +148,6 @@ span.game-score {
 span.purple-button-span  {
     font-size: 20px;
 }
-
 
 span.fa-star {
     color: #ffc030;
