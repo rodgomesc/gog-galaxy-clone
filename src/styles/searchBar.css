@@ -1,62 +1,85 @@
- .search-input {
-    display: flex;
-    flex-direction: row;
-  }
+input, select, textarea {
+  color: white;
+  font-size: large;
+}
+ 
+input[type="text"] {
+  background: transparent;
+  border: none;
+  outline: none;
+ }
+ 
+.search-button {
+  width: 70px;
+ }
+
+.search-button-icons {
+  position: relative;
+  left: 15px;
+}
+
+.search-button-icons .fa-search {
+  color: #54484e;
+}
+
+.search-input {
+  display: flex;
+  height: 40px;
+  background-color: #5f565c;
+}
   
-  .search-information span {
-    color: white;
-  }
+.search-information span {
+  color: white;
+}
   
-  .search-information {
-    display: flex;
-    background-color: #212022;
-    padding: 20px 20px;
-  }
+.search-information {
+  display: flex;
+  background-color: #54484e;
+  padding: 20px 20px;
+}
   
-  .search-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4px;
-    
-  }
+.search-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 
-  .search-dicas-titulo {
-    font-weight: 500;
-  }
+.search-info span {
+  font-size: 15px;
+}
 
-  .search-dicas {
-    font-size: 15px;
-    font-weight: 10;
-  }
+.search-dicas-titulo {
+  font-weight: 500;
+}
 
-  .icon-stack {
-    position: relative;
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: middle;
-  }
+.icon-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
 
-  .icon-stack-1x,
-  .icon-stack-2x,
-  .icon-stack-3x {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
+.icon-stack-1x,
+.icon-stack-2x,
+.icon-stack-3x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 
-  .icon-stack-1x {
-    line-height: inherit;
-  }
+.icon-stack-1x {
+  line-height: inherit;
+}
 
-  .icon-stack-2x {
-    font-size: 1.5em;
-  }
+.icon-stack-2x {
+  font-size: 1.5em;
+}
 
-  .icon-stack-3x {
-    font-size: 2em;
-  }
+.icon-stack-3x {
+  font-size: 2em;
+}
