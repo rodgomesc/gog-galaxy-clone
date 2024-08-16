@@ -25,4 +25,14 @@ const createSideBarExpandableTriggers = () => {
 
 createSideBarExpandableTriggers();
 
+const showSearchBar = () => {
+  var backdrop = document.getElementsByClassName("backdrop")[0]
+  var S = document.getElementById("searchBar");
+  S.style.display = "block";
+  backdrop.style.display = "block";
+  backdrop.addEventListener("click",() => {
+    backdrop.style.display = "none";
+    S.style.display = "none";
+  })
+}
 

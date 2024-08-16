@@ -1,3 +1,17 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+}
+
+.search-bar {
+  box-shadow: 0 4px 8px 12px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 input, select, textarea {
   color: white;
   font-size: large;
@@ -36,6 +50,7 @@ input[type="text"] {
   display: flex;
   background-color: #54484e;
   padding: 20px 20px;
+  height: calc(100% - 80px);
 }
   
 .search-info {
@@ -50,36 +65,25 @@ input[type="text"] {
   font-size: 15px;
 }
 
+.search-info .fa {
+  color: #989092;
+}
+
+.search-info-icon3 {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-info-icon3 i{
+  color: black;
+  font-size: 10px;
+}
+
 .search-dicas-titulo {
   font-weight: 500;
-}
-
-.icon-stack {
-  position: relative;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-  vertical-align: middle;
-}
-
-.icon-stack-1x,
-.icon-stack-2x,
-.icon-stack-3x {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.icon-stack-1x {
-  line-height: inherit;
-}
-
-.icon-stack-2x {
-  font-size: 1.5em;
-}
-
-.icon-stack-3x {
-  font-size: 2em;
 }
