@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/globals.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
     <link rel="stylesheet" href="../styles/discover.css" />
+    <link rel="stylesheet" href="../styles/searchBar.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,6 +14,35 @@
     <title>Discover</title>
   </head>
   <body>
+    <div class="search-bar">
+      <div class="search-input row">
+        <a class="search-button">
+          
+        </a>
+        <input type="text">
+      </div>
+      <div class="search-information row">
+        <div class="search-info">
+          <i class="fa fa-plus-square"></i>
+          <span class="search-dicas-titulo">Adicionar jogos</span>
+          <span class="search-dicas">Encontre qualquer jogo e marque-o como adquirido</span>
+        </div>
+        <div class="search-info">
+          
+          <span class="search-dicas-titulo">Realize ações</span>
+          <span class="search-dicas">Inicie qualquer jogo, converse com um amigo...</span>
+        </div>
+        <div class="search-info">
+          <span class="icon-stack fa-3x">
+            <i class="fa fa-circle icon-stack-3x"></i>
+            <i class="fa fa-chevron-left icon-stack-2x"></i>
+            <i class="fa fa-chevron-right icon-stack-1x"></i>
+          </span>
+          <span class="search-dicas-titulo">Pesquise metadados</span>
+          <span class="search-dicas">Pesquise etiquetas, gêneros, classificações e muito mais...</span>
+        </div>
+      </div>
+    </div>
     <div class="sidebar">
       <button class="expandable-header-button">
         <span>gog galaxy </span>
@@ -24,7 +54,7 @@
             <span>Discover</span>
           </button>
         </a>
-        <button class="sidebar-select-page">
+        <button class="sidebar-search">
           <i class="fa fa-search" aria-hidden="true"></i>
           <span>Busca</span>
         </button>
@@ -98,25 +128,40 @@
         </a>
       </div>
     </div>
-    <div class="column">
-      <div class="header"></div>
-      <div class="content row">
-        <div class="slide-section">
-          <div class="navigation-button">
-            <span class="dot" onclick="changeSlide(1, 'section1')"></span>
-            <span class="dot" onclick="changeSlide(2, 'section1')"></span>
-            <span class="dot" onclick="changeSlide(3, 'section1')"></span>
-            <span class="dot" onclick="changeSlide(4, 'section1')"></span>
-            <span class="fa fa-chevron-left"></span>
-            <span class="fa fa-chevron-right"></span>
+      <div class="column">
+        <div class="header">
+          <div class="row">
+            <span class="fa fa-arrow-left"></span>
+            <span class="fa fa-arrow-right"></span>
           </div>
-          <div class="slider section1">
-            <img id="img-1" img src="../img-1.jpg" alt="Image 1">
-            <img id="img-2" img src="../img-2.jpg" alt="Image 2">
-            <img id="img-3" img src="../img-3.jpg" alt="Image 3">
-            <img id="img-4" img src="../img-4.jpg" alt="Image 4">
+          <div class="header-content-wrapper">
+            <a class="purple-btn">
+              <span class="fa fa-plus"></span>
+              <span>Add Games & Friends</span>
+            </a>
+            <a class="cart-btn">
+              <span class="fa fa-shopping-cart"></span>
+            </a>
           </div>
-          <div class="new-arrivals">
+        </div>
+        <div class="content">
+          <div class="column">
+            <div class="navigation-button">
+              <span class="dot" onclick="changeSlide(1, 'section1')"></span>
+              <span class="dot" onclick="changeSlide(2, 'section1')"></span>
+              <span class="dot" onclick="changeSlide(3, 'section1')"></span>
+              <span class="dot" onclick="changeSlide(4, 'section1')"></span>
+              <span class="fa fa-chevron-left"></span>
+              <span class="fa fa-chevron-right"></span>
+            </div>
+            <div class="slider section1">
+              <img id="img-1" img src="../img-1.jpg" alt="Image 1">
+              <img id="img-2" img src="../img-2.jpg" alt="Image 2">
+              <img id="img-3" img src="../img-3.jpg" alt="Image 3">
+              <img id="img-4" img src="../img-4.jpg" alt="Image 4">
+            </div>
+          </div>
+          <div class="column">
             <div class="navigation-button">
               <span class="dot" onclick="changeSlide(1, 'section2')"></span>
               <span class="dot" onclick="changeSlide(2, 'section2')"></span>
@@ -405,15 +450,14 @@
                   </div>
                 </div>
               </div>
-              
-            </div>
           </div>
-        </div>  
+          </div> 
+        </div> 
+        <!-- <div style="display:flex; flex:1; border: 1px solid red; min-height:7000px; color:white;">
+          <span>i'm a dummy view with 7000px height that's just used to cause scroll</span>
+        </div> -->
       </div>
-      <div class="footer">
-        <span>footer</span>
-      </div>
-    </div>
+     
     <script src="../scripts/sidebar.js"></script>
     <script src="../scripts/discover.js"></script>
 

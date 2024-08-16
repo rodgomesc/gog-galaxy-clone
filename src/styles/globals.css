@@ -2,6 +2,9 @@
   --sidebar-expandable-text-color: #716d7a;
   --sidebar-expandable-text-hovered: #f2f2f3;
   --violet-button-background: #a380d1;
+  --header-height: 58px;
+  --sidebar-width: 248px;
+  --button-add-friends-width: 220px;
 }
 
 * {
@@ -17,4 +20,6 @@ html, body {
   display: flex;
   width: 100vw;
   height: 100vh;
+  /* background: radial-gradient(0, rgb(53,44,51) 40%, rgba(26,25,25, 1) 100%); */
+  background: #2F1C39;
 }

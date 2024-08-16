@@ -1,6 +1,6 @@
 .sidebar {
   padding: 0 22px;
-  width: 248px;
+  min-width: var(--sidebar-width);
   background: rgb(133, 110, 203);
   background: linear-gradient(0, rgb(20, 9, 33) 100%, rgba(21, 14, 35, 1) 40%);
 }
@@ -28,7 +28,6 @@
   height: 0;
   overflow: hidden;
   transition: height 0.2s ease-out;
-  border: 1px solid red;
   text-transform: capitalize;
 }
 
@@ -53,3 +52,4 @@
 .sidebar-select-page > i {
   margin-right: 5px;
 }
+
